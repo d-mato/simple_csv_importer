@@ -1,6 +1,7 @@
+require 'simple_importer/version'
 require 'csv'
 
-module Importer
+module SimpleImporter
   def self.included(base)
     base.class_eval do
       @target_klass = base.to_s.sub(/Importer$/, '')

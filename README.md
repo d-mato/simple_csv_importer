@@ -16,7 +16,7 @@ end
 
 ```ruby
 class UserImporter
-  include Importer
+  include SimpleImporter
 
   assign :email, 'Email'
   assign :name, ->(row) { "#{row['First Name']} #{row['Last Name']}" }
