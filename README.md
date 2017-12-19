@@ -1,4 +1,4 @@
-# SimpleImporter
+# SimpleCsvImporter
 
 Convert CSV data to instances of model and import to database easily.
 
@@ -16,7 +16,7 @@ end
 
 ```ruby
 class UserImporter
-  include SimpleImporter
+  include SimpleCsvImporter
 
   assign :email, 'Email'
   assign :name, ->(row) { "#{row['First Name']} #{row['Last Name']}" }
